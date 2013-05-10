@@ -27,7 +27,7 @@ The structure of the app is primary based off of how [Brunch.io](http://brunch.i
 ## Getting Started
 First clone this repo.
 
-You will need Node.js in order to complete the following steps. Please [install Node.js](https://github.com/joyent/node/wiki/Installation) if you have not doen so.
+You will need Node.js in order to complete the following steps. Please [install Node.js](https://github.com/joyent/node/wiki/Installation) if you have not done so.
 
 Install these dependencies globally if you have not done so:
 
