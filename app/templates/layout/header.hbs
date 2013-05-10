@@ -1,0 +1,12 @@
+<div class="container">
+  <a href="/">Chaplin Starter</a>
+
+  <nav id="main-menu" class="nav-menu right">
+
+    {{#isAuthenticated}}
+    <a href="#logout">Logout</a>
+    {{else}}
+    <a href="#login">Login</a>
+    {{/isAuthenticated}}
+  </nav>
+</div>

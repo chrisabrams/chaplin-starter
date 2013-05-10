@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Runner</title>
+    <link rel="stylesheet" href="lib/mocha-1.4.2.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="lib/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="//d3nslu0hdya83q.cloudfront.net/dist/1.0-beta5/raven.min.js"></script>
+    <script src="lib/mocha-1.4.2.js"></script>
+    <script>
+      mocha.setup({ ui: 'bdd', ignoreLeaks: true, timeout: 20000 });
+    </script>
+    <script src="lib/expect-0.1.2.js"></script>
+    <script src="lib/sinon-1.4.2.js"></script>
+    <script src="lib/sinon-expect-d3365d35.js"></script>
+    <script src="public/js/modernizr.js"></script>
+    <script type="text/javascript" src="public/js/socket.io.min.js"></script>
+    <script src="public/js/app.js"></script>
+    <script src="public/js/test.js"></script>
+
+    <script>
+      window.expect = SinonExpect.enhance(expect, sinon, 'was');
+      $(document).ready(function() {
+
+        if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+            mocha.run();
+        } 
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="testbed"></div>
+  </body>
+</html>

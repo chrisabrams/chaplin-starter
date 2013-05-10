@@ -1,0 +1,33 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+.npm-log
+*.DS_Store
+**/*.DS_Store
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+
+# Folders
+components/
+dist/
+logs/
+node_modules/
+public/
+tmp/
+vendor/scripts/bower
+config/nginx.conf
